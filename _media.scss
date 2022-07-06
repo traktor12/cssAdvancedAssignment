@@ -1,4 +1,9 @@
 @media screen {
+  @media (max-height: 465px) {
+    #as3sm {
+      top: 0%;
+    }
+
     @media (max-width: 945px) {
       #as2grid {
         grid-template-columns: 50% 50%;
@@ -93,9 +98,4 @@
       }
     }
   }
-
-  @media (max-height: 465px) {
-    #as3sm {
-      top: 0%;
-    }
-  }
+}

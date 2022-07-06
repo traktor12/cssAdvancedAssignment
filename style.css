@@ -191,12 +191,17 @@
   content: "Check our GitHub";
 }
 
-@media screen and (max-width: 945px) {
+@media screen and (max-height: 465px) {
+  #as3sm {
+    top: 0%;
+  }
+}
+@media screen and (max-height: 465px) and (max-width: 945px) {
   #as2grid {
     grid-template-columns: 50% 50%;
   }
 }
-@media screen and (max-width: 945px) and (max-width: 630px) {
+@media screen and (max-height: 465px) and (max-width: 945px) and (max-width: 630px) {
   #as2grid {
     grid-template-columns: 50% 50%;
   }
@@ -212,7 +217,7 @@
     transform: translate(-170%, 500%);
   }
 }
-@media screen and (max-width: 945px) and (max-width: 630px) and (max-width: 500px) {
+@media screen and (max-height: 465px) and (max-width: 945px) and (max-width: 630px) and (max-width: 500px) {
   #as2grid {
     grid-template-columns: 100%;
   }
@@ -228,12 +233,12 @@
     top: 0%;
   }
 }
-@media screen and (max-width: 945px) and (max-width: 630px) and (max-width: 500px) and (max-width: 405px) {
+@media screen and (max-height: 465px) and (max-width: 945px) and (max-width: 630px) and (max-width: 500px) and (max-width: 405px) {
   #as1parent #as1top p {
     font-size: 17.5px;
   }
 }
-@media screen and (max-width: 945px) and (max-width: 630px) and (max-width: 500px) and (max-width: 405px) and (max-width: 347px) {
+@media screen and (max-height: 465px) and (max-width: 945px) and (max-width: 630px) and (max-width: 500px) and (max-width: 405px) and (max-width: 347px) {
   #as1parent #as1top p {
     font-size: 16px;
   }
@@ -260,14 +265,9 @@
     font-size: 12px;
   }
 }
-@media screen and (max-width: 945px) and (max-width: 630px) and (max-width: 500px) and (max-width: 405px) and (max-width: 347px) and (max-width: 301px) {
+@media screen and (max-height: 465px) and (max-width: 945px) and (max-width: 630px) and (max-width: 500px) and (max-width: 405px) and (max-width: 347px) and (max-width: 301px) {
   #as1parent #as1top p {
     font-size: 14px;
-  }
-}
-@media (max-height: 465px) {
-  #as3sm {
-    top: 0%;
   }
 }
 ico {
