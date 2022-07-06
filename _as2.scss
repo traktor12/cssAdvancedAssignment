@@ -1,0 +1,50 @@
+#as2grid{
+    margin-top: 1em;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    background-color: #c3cfe2;
+    padding: 10px;
+    position: relative;
+    
+    .grid-item {
+      text-align: center;
+      transition: ease-out 0.4s;
+      margin: 5px 0 20PX 0;
+      max-width: 100%;
+      min-width: none;
+      border-radius: $radius32;
+
+      .as2face{
+        border-radius: 14px;
+        max-width: 100%;
+      }
+     
+      button{
+        cursor: pointer;
+        position: absolute;
+        padding: 5px;
+        font-weight: bold;
+        transform: translate(-200%, 700%);
+        visibility: hidden;
+        width: 90px;
+      }
+
+  
+
+      &:hover{
+       // transition: ease-out 0.4s; This works but I made the animation in _animate instead
+        background-color: #232C3D;
+      
+      @include animate(fade, 1s, linear, 1);
+
+        .as2face{
+          @include animate(fade, 0s, reverse, 1);
+          animation-fill-mode: forwards;   
+        }
+
+        button{
+          visibility:initial;
+        }
+      }
+    }  
+  }

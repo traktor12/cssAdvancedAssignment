@@ -1,0 +1,80 @@
+$pad: 1em 3em 3em 3em;
+$radius32: 32px;
+$facebookc: #2E4483;
+$twitterc: #30ABE5;
+$linkedinc: #0288D1;
+$githubc: #212121;
+$bsize: 20px;
+$smbtxt: 16px;
+
+@import 'animate';
+
+@import 'as1';
+@import 'as2';
+@import 'as3';
+@import 'media'; 
+  
+       
+
+
+
+
+ico {
+  display: block;
+  width: 40px;
+  height: 68px;
+  margin-left: 18px;
+  position: relative;
+  background: none;
+  //overflow: hidden;
+  cursor: pointer;
+  float:left;
+}
+
+.btn-upload {
+  margin-left: 87px;
+}
+
+/* upload */
+
+ico.btn-upload:after {
+  box-sizing: border-box;
+  display: block;
+  content: "";
+  width: 40px;
+  height: 40px;
+  border: 2px solid #383838;
+  border-radius: 0px;
+  position: absolute;
+  bottom: 0;
+}
+ico.btn-upload:hover n {
+  transform: translateY(1px);
+}
+ico.btn-upload n {
+  display: block;
+  width: 2px;
+  height: 38px;
+  background: #383838;
+  position: absolute;
+  left: 50%;
+  margin-left: -1px;
+  transform: translateY(60px);
+  transition: 0.4s;
+}
+ico.btn-upload n:after,
+ico.btn-upload n:before {
+  content: "";
+  width: 2px;
+  height: 17.5px;
+  background: #383838;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform-origin: 0 0;
+  transform: rotate(-45deg);
+}
+ico.btn-upload n:before {
+  transform-origin: 2px 0px;
+  transform: rotate(45deg);
+}

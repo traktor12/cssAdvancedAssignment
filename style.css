@@ -1,0 +1,333 @@
+@-webkit-keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+#as1parent {
+  position: relative;
+  top: 10px;
+  left: 0;
+  width: 27pc;
+  max-width: -webkit-fit-content;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+  height: 35pc;
+  background-color: #c3cfe2;
+  padding-top: 5px;
+  margin-bottom: 2em;
+}
+#as1parent #as1top {
+  width: 90%;
+  height: 59%;
+  margin: 0 auto;
+  position: relative;
+  background: white;
+  border-top-left-radius: 32px;
+  border-top-right-radius: 32px;
+}
+#as1parent #as1top p {
+  color: #565656;
+  padding: 1em 3em 3em 3em;
+  font-size: 19px;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.8;
+}
+#as1parent #as1bottom {
+  width: 90%;
+  height: 34%;
+  top: 0%;
+  margin: 0 auto;
+  position: relative;
+  background: #686de0;
+  border-bottom-left-radius: 32px;
+  border-bottom-right-radius: 32px;
+}
+#as1parent #as1bottom p {
+  color: white;
+  font-size: 19px;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.8;
+  position: absolute;
+  top: 25%;
+  left: 35%;
+}
+#as1parent #as1bottom p::after {
+  content: "FakeusTakeus.com";
+  font-size: 12px;
+  position: absolute;
+  top: 100%;
+  left: 10%;
+  color: #B3B6EB;
+}
+#as1parent #as1bottom #as1face {
+  width: 20%;
+  height: 45%;
+  top: -20%;
+  left: 40%;
+  margin: 0 auto;
+  position: relative;
+  border-radius: 50%;
+  border: white 0.5em solid;
+}
+
+#as2grid {
+  margin-top: 1em;
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  background-color: #c3cfe2;
+  padding: 10px;
+  position: relative;
+}
+#as2grid .grid-item {
+  text-align: center;
+  transition: ease-out 0.4s;
+  margin: 5px 0 20PX 0;
+  max-width: 100%;
+  min-width: none;
+  border-radius: 32px;
+}
+#as2grid .grid-item .as2face {
+  border-radius: 14px;
+  max-width: 100%;
+}
+#as2grid .grid-item button {
+  cursor: pointer;
+  position: absolute;
+  padding: 5px;
+  font-weight: bold;
+  transform: translate(-200%, 700%);
+  visibility: hidden;
+  width: 90px;
+}
+#as2grid .grid-item:hover {
+  background-color: #232C3D;
+  -webkit-animation: fade 1s linear 1;
+          animation: fade 1s linear 1;
+}
+#as2grid .grid-item:hover .as2face {
+  animation: fade 0s reverse 1;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+#as2grid .grid-item:hover button {
+  visibility: initial;
+}
+
+#as3sm {
+  position: fixed;
+  width: 60px;
+  right: 3px;
+  top: 40%;
+  z-index: 1;
+}
+#as3sm img {
+  width: 35px;
+}
+#as3sm button {
+  cursor: pointer;
+  float: right;
+  width: 60px;
+  height: 55px;
+  overflow: scroll;
+  border: none;
+  transition: all 0.6s;
+}
+#as3sm button::after {
+  content: "";
+  font-size: 0px;
+  text-decoration: underline;
+  transition: all 0.6s;
+}
+#as3sm button:hover {
+  width: 260px;
+  color: white;
+}
+#as3sm button:hover::after {
+  font-size: 16px;
+  text-align: center;
+}
+#as3sm button:hover img {
+  float: inline-start;
+}
+#as3sm #yt {
+  background-color: red;
+}
+#as3sm #yt::after {
+  content: "Subscribe to our YouTube";
+}
+#as3sm #fb {
+  background-color: #2E4483;
+}
+#as3sm #fb::after {
+  content: "Follow os on Facebook";
+}
+#as3sm #ln {
+  background-color: #0288D1;
+}
+#as3sm #ln::after {
+  content: "Follow us on LinkedIn";
+}
+#as3sm #tw {
+  background-color: #30ABE5;
+}
+#as3sm #tw::after {
+  content: "Follow us on Twitter";
+}
+#as3sm #gh {
+  background-color: #212121;
+}
+#as3sm #gh::after {
+  content: "Check our GitHub";
+}
+
+@media screen and (max-width: 945px) {
+  #as2grid {
+    grid-template-columns: 50% 50%;
+  }
+}
+@media screen and (max-width: 945px) and (max-width: 630px) {
+  #as2grid {
+    grid-template-columns: 50% 50%;
+  }
+  #as2grid .grid-item {
+    max-width: 98%;
+    height: 300px;
+  }
+  #as2grid .grid-item .as2face {
+    height: 300px;
+    width: 230px;
+  }
+  #as2grid .grid-item button {
+    transform: translate(-170%, 500%);
+  }
+}
+@media screen and (max-width: 945px) and (max-width: 630px) and (max-width: 500px) {
+  #as2grid {
+    grid-template-columns: 100%;
+  }
+  #as2grid .grid-item {
+    max-width: 99%;
+  }
+  #as2grid .grid-item .as2face {
+    height: 300px;
+    width: 77%;
+  }
+
+  #as3sm {
+    top: 0%;
+  }
+}
+@media screen and (max-width: 945px) and (max-width: 630px) and (max-width: 500px) and (max-width: 405px) {
+  #as1parent #as1top p {
+    font-size: 17.5px;
+  }
+}
+@media screen and (max-width: 945px) and (max-width: 630px) and (max-width: 500px) and (max-width: 405px) and (max-width: 347px) {
+  #as1parent #as1top p {
+    font-size: 16px;
+  }
+  #as1parent #as1bottom p {
+    left: 15%;
+  }
+
+  #as3sm {
+    width: 40px;
+    right: 0px;
+    top: 0%;
+  }
+  #as3sm img {
+    width: 25px;
+  }
+  #as3sm button {
+    width: 40px;
+    height: 35px;
+  }
+  #as3sm button:hover {
+    width: 200px;
+  }
+  #as3sm button:hover::after {
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 945px) and (max-width: 630px) and (max-width: 500px) and (max-width: 405px) and (max-width: 347px) and (max-width: 301px) {
+  #as1parent #as1top p {
+    font-size: 14px;
+  }
+}
+@media (max-height: 465px) {
+  #as3sm {
+    top: 0%;
+  }
+}
+ico {
+  display: block;
+  width: 40px;
+  height: 68px;
+  margin-left: 18px;
+  position: relative;
+  background: none;
+  cursor: pointer;
+  float: left;
+}
+
+.btn-upload {
+  margin-left: 87px;
+}
+
+/* upload */
+ico.btn-upload:after {
+  box-sizing: border-box;
+  display: block;
+  content: "";
+  width: 40px;
+  height: 40px;
+  border: 2px solid #383838;
+  border-radius: 0px;
+  position: absolute;
+  bottom: 0;
+}
+
+ico.btn-upload:hover n {
+  transform: translateY(1px);
+}
+
+ico.btn-upload n {
+  display: block;
+  width: 2px;
+  height: 38px;
+  background: #383838;
+  position: absolute;
+  left: 50%;
+  margin-left: -1px;
+  transform: translateY(60px);
+  transition: 0.4s;
+}
+
+ico.btn-upload n:after,
+ico.btn-upload n:before {
+  content: "";
+  width: 2px;
+  height: 17.5px;
+  background: #383838;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform-origin: 0 0;
+  transform: rotate(-45deg);
+}
+
+ico.btn-upload n:before {
+  transform-origin: 2px 0px;
+  transform: rotate(45deg);
+}/*# sourceMappingURL=style.css.map */

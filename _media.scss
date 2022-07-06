@@ -1,0 +1,101 @@
+@media screen {
+    @media (max-width: 945px) {
+      #as2grid {
+        grid-template-columns: 50% 50%;
+      }
+
+      @media (max-width: 630px) {
+        #as2grid {
+          grid-template-columns: 50% 50%;
+          .grid-item {
+            max-width: 98%;
+            height: 300px;
+            .as2face {
+              height: 300px;
+              width: 230px;
+            }
+            button {
+              transform: translate(-170%, 500%);
+            }
+          }
+        }
+
+        @media (max-width: 500px) {
+          #as2grid {
+            grid-template-columns: 100%;
+            .grid-item {
+              max-width: 99%;
+              .as2face {
+                height: 300px;
+                width: 77%;
+              }
+            }
+          }
+          #as3sm {
+            top: 0%;
+          }
+
+          @media (max-width: 405px) {
+            #as1parent {
+              #as1top {
+                p {
+                  font-size: 17.5px;
+                }
+              }
+            }
+
+            @media (max-width: 347px) {
+              #as1parent {
+                #as1top {
+                  p {
+                    font-size: 16px;
+                  }
+                }
+                #as1bottom {
+                  p {
+                    left: 15%;
+                  }
+                }
+              }
+              #as3sm {
+                width: 40px;
+                right: 0px;
+                top: 0%;
+                img {
+                  width: 25px;
+                }
+                button {
+                  width: 40px;
+                  height: 35px;
+                  &:hover {
+                    width: 200px;
+                    &::after {
+                      font-size: 12px;
+                    }
+                  }
+                }
+              }
+
+              @media (max-width: 301px) {
+                #as1parent {
+                  #as1top {
+                    p {
+                      font-size: 14px;
+                    }
+                  }
+                }
+
+                //-------------------------------------
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @media (max-height: 465px) {
+    #as3sm {
+      top: 0%;
+    }
+  }

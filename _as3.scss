@@ -1,0 +1,73 @@
+#as3sm {
+  position: fixed;
+  width: 60px;
+  right: 3px;
+  top: 40%;
+  z-index: 1;
+  img {
+    width: 35px;
+  }
+
+  button {
+    cursor: pointer;
+    float: right;
+    width: 60px;
+    height: 55px;
+    overflow: scroll;
+    border: none;
+    transition: all 0.6s; //transition for rest of the button
+    &::after {
+      content: "";
+      font-size: 0px;
+      text-decoration: underline;
+      transition: all 0.6s; //transition for text 
+    }
+
+    //All buttons pseudo properties
+    &:hover {
+      width: 260px;
+      color: white;
+      &::after {
+        font-size: $smbtxt;
+        text-align: center;      
+      }
+      img{
+        float:inline-start;
+      }
+    }
+    //-------------------------------------
+  }
+
+  //Individual button properties
+  #yt {
+    background-color: red;
+    &::after {
+      content: "Subscribe to our YouTube";
+    }
+  }
+  #fb {
+    background-color: $facebookc;
+    &::after {
+      content: "Follow os on Facebook";
+    }
+  }
+  #ln {
+    background-color: $linkedinc;
+    &::after {
+      content: "Follow us on LinkedIn";
+    }
+  }
+  #tw {
+    background-color: $twitterc;
+    &::after {
+      content: "Follow us on Twitter";
+    }
+  }
+  #gh {
+    background-color: $githubc;
+    &::after {
+      content: "Check our GitHub";
+    }
+  }
+  //-----------------------
+}

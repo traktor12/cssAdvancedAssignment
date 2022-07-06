@@ -1,0 +1,67 @@
+
+#as1parent{
+    position:relative;
+    top:10px;
+    left:0;
+    width:27pc;
+    max-width: fit-content;
+    height: 35pc;
+    background-color: #c3cfe2;
+    padding-top: 5px;
+    margin-bottom: 2em;
+    #as1top{
+        width: 90%;
+        height: 59%;
+        margin: 0 auto;
+        position: relative;
+        background:white;
+        //border-radius: 32px 32px 0px 0px; I use the below ones instead
+        border-top-left-radius: $radius32;
+        border-top-right-radius: $radius32;
+            p{
+              color: #565656;
+              padding: $pad;
+              font-size: 19px;
+              font-family: Arial, Helvetica, sans-serif;
+              line-height: 1.8;
+            }
+      }
+      #as1bottom{
+        width: 90%;
+        height: 34%;
+        top:0%;
+        margin: 0 auto;
+        position: relative;
+        background:#686de0;
+        //border-radius: 0px 0px 2em 2em; I used the below ones instead
+        border-bottom-left-radius: $radius32;
+        border-bottom-right-radius: $radius32;
+        p{
+          color: white;
+          font-size: 19px;
+          font-family: Arial, Helvetica, sans-serif;
+          line-height: 1.8;
+          position: absolute;
+          top: 25%;
+          left: 35%;
+            &::after{
+              content: "FakeusTakeus.com";
+              font-size: 12px;
+              position: absolute;
+              top: 100%;
+              left: 10%;
+              color: #B3B6EB;
+            }
+        }
+                 #as1face{
+                width: 20%;
+                height: 45%;
+                top:-20%;
+                left: 40%;
+                margin: 0 auto;
+                position: relative;
+                border-radius: 50%;
+                border: white 0.5em solid;
+                }
+      }
+  }
