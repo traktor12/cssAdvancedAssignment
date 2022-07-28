@@ -1,15 +1,12 @@
 @media screen {
-  @media (max-height: 465px) {
-    #as3sm {
-      top: 0%;
-    }
 
+//══════════════════════════════════════ A bit bigger tablet
     @media (max-width: 945px) {
       #as2grid {
         grid-template-columns: 50% 50%;
       }
-
-      @media (max-width: 630px) {
+//══════════════════════════════════════ "Standard" size tablet 
+      @media (max-width: 768px) {
         #as2grid {
           grid-template-columns: 50% 50%;
           .grid-item {
@@ -24,7 +21,7 @@
             }
           }
         }
-
+//══════════════════════════════════════ Larger smartphones
         @media (max-width: 500px) {
           #as2grid {
             grid-template-columns: 100%;
@@ -39,7 +36,7 @@
           #as3sm {
             top: 0%;
           }
-
+//══════════════════════════════════════ Adjustments for smaller phones
           @media (max-width: 405px) {
             #as1parent {
               #as1top {
@@ -48,7 +45,7 @@
                 }
               }
             }
-
+//══════════════════════════════════════ Adjustments for even smaller phones
             @media (max-width: 347px) {
               #as1parent {
                 #as1top {
@@ -80,7 +77,7 @@
                   }
                 }
               }
-
+//══════════════════════════════════════ Adjustments for that one person with some kind of micro phone
               @media (max-width: 301px) {
                 #as1parent {
                   #as1top {
@@ -89,8 +86,7 @@
                     }
                   }
                 }
-
-                //-------------------------------------
+// End brackets-------------------------------------
               }
             }
           }
@@ -98,4 +94,3 @@
       }
     }
   }
-}
